@@ -1,4 +1,4 @@
-# 256100_EmbeddedC
+# Seat Heating Application
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/13f985de510b445b901780c9b8c877e9)](https://app.codacy.com/gh/MeghanaMeda/256100_EmbeddedC?utm_source=github.com&utm_medium=referral&utm_content=MeghanaMeda/256100_EmbeddedC&utm_campaign=Badge_Grade_Settings)
 
