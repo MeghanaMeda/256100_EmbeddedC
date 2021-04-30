@@ -35,7 +35,7 @@ void USARTWrite(uint16_t temp)
     unsigned char data4[]="Temperature: 33 degree C\n";
     unsigned char data5[]="Temperature: 0 degree C\n";
     int i=0;
-        if(temp>=0 && temp<=200){
+        if(temp<=200){
             i=0;
             while(data1[i]!=0){
             while (!( UCSR0A & (1<<UDRE0)));  // Wait for empty transmit buffer
