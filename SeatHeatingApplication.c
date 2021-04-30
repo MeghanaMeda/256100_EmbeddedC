@@ -15,7 +15,7 @@ int main(void)
             TurnLED_ON();//Turn LED ON
             temp=GetADC(); //Get the ADC value
             PWM(temp); //PWM output based on temperature
-		    USARTWrite(temp); //To Serial monitor to print Temperature
+		    USARTWrite(temp); //Print Temperature using USART protocol
             
 
         }
