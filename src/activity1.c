@@ -36,6 +36,18 @@ int LED(void)
         { 
             led_status=1;
         }
+	else if(!(PIND&(1<<BUTTON_SENSOR )) && (PIND&(1<<TEMP_SENSOR))) //button is pressed but temperature is not pressed
+        { 
+            led_status=0;
+        }
+	else if((PIND&(1<<BUTTON_SENSOR )) && !(PIND&(1<<TEMP_SENSOR))) //temperature is pressed but button sensor is not pressed
+        { 
+            led_status=0;
+        }
+	else if((PIND&(1<<BUTTON_SENSOR )) && (PIND&(1<<TEMP_SENSOR))) //both the switches are not pressed
+        { 
+            led_status=0;
+        }
         else  //in all other cases
         {
             led_status=0;
