@@ -21,7 +21,7 @@ void InitTimer()
 void PWM(uint16_t temp)
 {
     InitTimer();
-    if(temp>=0 && temp<=200){
+    if(temp<=200){
             OCR1A = PWM_20_PERCENT;
             _delay_ms(200);
         }
