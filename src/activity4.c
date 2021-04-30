@@ -44,7 +44,7 @@ void USARTWrite(uint16_t temp)
             }
             _delay_ms(2000);
         }
-        else if(temp>=210 && temp<=500){
+        else if(temp>=210 && temp<=410){
             i=0;
             while(data2[i]!=0){
             while (!( UCSR0A & (1<<UDRE0)));  // Wait for empty transmit buffer
@@ -53,7 +53,7 @@ void USARTWrite(uint16_t temp)
             }
             _delay_ms(2000);
         }
-        else if(temp>=510 && temp<=700){        
+        else if(temp>=411 && temp<=717){        
             i=0;
             while(data3[i]!=0){
             while (!( UCSR0A & (1<<UDRE0)));  // Wait for empty transmit buffer
@@ -62,7 +62,7 @@ void USARTWrite(uint16_t temp)
             }
             _delay_ms(2000);
         }
-        else if(temp>=710 && temp<=1024){         
+        else if(temp>=718 && temp<=1024){         
             i=0;
             while(data4[i]!=0){
             while (!( UCSR0A & (1<<UDRE0)));  // Wait for empty transmit buffer
