@@ -32,6 +32,6 @@ uint16_t GetADC(void)
 {
       InitADC();
       uint16_t temp;
-      temp=ReadADC(0);
+      temp=ReadADC(0);//specifying 0 channnel to read ADC value
       return temp;
 }
