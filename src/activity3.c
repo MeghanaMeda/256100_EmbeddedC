@@ -25,16 +25,16 @@ void PWM(uint16_t temp)
             OCR1A = PWM_20_PERCENT;
             _delay_ms(200);
         }
-        else if(temp>=210 && temp<=500){
+        else if(temp>=210 && temp<=410){
              OCR1A = PWM_40_PERCENT;
             _delay_ms(200);
         }
-        else if(temp>=510 && temp<=700){
+        else if(temp>=510 && temp<=717){
              OCR1A = PWM_70_PERCENT;
             _delay_ms(200);
         }
-        else if(temp>=710 && temp<=1024){
-             OCR1A = PWM_95_PERCENT;
+        else if(temp>=718 && temp<=1024){
+             OCR1A = PWM_90_PERCENT;
             _delay_ms(200);
         }
         else{
